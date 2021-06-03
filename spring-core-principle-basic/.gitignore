@@ -38,6 +38,3 @@ out/
 
 ### setting ###
 application.properties
-
-### Test - 아직 사용 안하는 기능 ###
-test/
