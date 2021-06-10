@@ -2,6 +2,7 @@ package com.study.dw.springcoreprinciplebasic;
 
 import com.study.dw.springcoreprinciplebasic.discount.DiscountPolicy;
 import com.study.dw.springcoreprinciplebasic.discount.FixDixcountPolicy;
+import com.study.dw.springcoreprinciplebasic.discount.RateDiscountPolicy;
 import com.study.dw.springcoreprinciplebasic.member.MemberRepository;
 import com.study.dw.springcoreprinciplebasic.member.MemberService;
 import com.study.dw.springcoreprinciplebasic.member.MemberServiceImpl;
@@ -26,6 +27,7 @@ public class AppConfig {
     }
 
     public DiscountPolicy discountPolicy(){
-        return new FixDixcountPolicy();
+//        return new FixDixcountPolicy();
+        return new RateDiscountPolicy(); //할인정책 변경
     }
 }
