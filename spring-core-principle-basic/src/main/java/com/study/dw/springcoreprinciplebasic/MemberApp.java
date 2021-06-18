@@ -13,7 +13,8 @@ public class MemberApp {
 //        MemberService memberService = appConfig.memberService();
         // Spring으로 바꾸기
         // AppConfig class에 있는 설정 정보를 가지고 spring이 @Bean에다가 관리해줌
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        // 인터페이스                                구현체
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class); //스프링 컨테이너 생성
 
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
 
